@@ -96,3 +96,5 @@ input: GFM
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+theme: jekyll-theme-leap-day
