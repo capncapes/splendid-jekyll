@@ -4,10 +4,9 @@ source "https://rubygems.org"
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
 #
 #     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-gem "jekyll", "~> 4.2.2"
+
+# gem "jekyll", "~> 4.2.2"
+gem "github-pages", "226", group: :jekyll_plugins
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -15,10 +14,12 @@ gem "jekyll", "~> 4.2.2"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.9"
-  gem "jekyll-seo-tag", "~> 2.1"
+  gem "jekyll-feed", "0.15.1"
+  gem "jekyll-seo-tag", "~> 2.8.0"
   gem "jekyll-paginate"
-  gem "rouge"
+  gem "rouge", "3.26.0"
+  gem "jekyll-sass-converter", "1.5.2"
+  gem "kramdown", "2.3.2"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
